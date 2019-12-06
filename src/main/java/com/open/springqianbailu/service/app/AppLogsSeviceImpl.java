@@ -32,7 +32,7 @@ public class AppLogsSeviceImpl extends AbsServiceImpl implements AppLogsSevice {
 //        List<AppLogs> list = (List<AppLogs>) redisUtil.get(REDIS_APPLOG_LIST_KEY);
 //        if (list == null || list.size() == 0) {
         List<AppLogs> list = appLogsMapper.selectAll();
-        redisUtil.set(REDIS_APPLOG_LIST_KEY, list, REDIS_EXPIRE_TIME);
+//        redisUtil.set(REDIS_APPLOG_LIST_KEY, list, REDIS_EXPIRE_TIME);
 //        }
         return list;
     }
